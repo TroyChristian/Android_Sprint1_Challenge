@@ -23,4 +23,12 @@
             android:background= "#FFF"
             android:layout_height="wrap_content" />
 
+    <Button android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Mark Watched"
+            android:id="@+id/btn_mark_watched"
+            android:background="#FFF"
+            android:layout_height="wrap_content" android:layout_marginBottom="56dp"
+            tools:layout_editor_absoluteX="0dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
