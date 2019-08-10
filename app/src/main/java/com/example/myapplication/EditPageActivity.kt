@@ -1,4 +1,5 @@
 package com.example.myapplication
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -17,6 +18,8 @@ class EditPageActivity : AppCompatActivity() {
         btn_save_movie.setOnClickListener{
             var intentSaveMovie = Intent()
             intentSaveMovie.putExtra("movie", createMovie())
+            setResult(Activity.RESULT_OK, intentSaveMovie)
+            finish()
 
         }
 
