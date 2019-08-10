@@ -5,6 +5,22 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin = "15dp"
         tools:context=".EditPageActivity">
+
+
+    <EditText android:layout_width="match_parent"
+              android:hint="Book Title"
+              android:id = "@+id/et_movie_title"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            android:text = "Save Movie"
+            android:id="@+id/btn_save_movie"
+            android:background= "#FFF"
+            android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

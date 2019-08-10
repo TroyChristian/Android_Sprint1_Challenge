@@ -11,9 +11,10 @@
 <ScrollView android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf = "btn_add_movie">
+            app:layout_constraintBottom_toTopOf = "@id/btn_add_movie">
     <LinearLayout
             android:orientation = "vertical"
+            android:id="@+id/ll_movielist"
             android:layout_width = "match_parent"
             android:layout_height = "0dp"/>
 </ScrollView>

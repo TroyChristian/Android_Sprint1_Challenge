@@ -1,4 +1,4 @@
-/*package com.example.myapplication.Movie
+package com.example.myapplication.Movie
+import java.io.Serializable
 
-class Movie {
-} */
+data class Movie (var title:String, var watched:Boolean): Serializable
