@@ -28,6 +28,19 @@ class ListActivity : AppCompatActivity() {
             startActivityForResult(addMovieIntent, REQUEST_CODE_EDIT_MOVIE)
         }
     }
+
+    fun refreshMovieList(){
+        ll_movielist.removeAllViews()
+        for((counter, movie) in movieList.withIndex()) {
+            createTextView(movie, counter)
+        }
+    }
+    override fun onPostResume(){
+        refreshMovieList()
+        super.onPostResume()
+    }
+
+
     fun createTextView(movie: Movie, index:Int): TextView {
         var newMovieView = TextView(this)
         newMovieView.textSize = 24f
@@ -50,7 +63,7 @@ class ListActivity : AppCompatActivity() {
             val newResultMovie = data!!.getSerializableExtra("movie") as Movie
             movieList.add(newResultMovie)
             ll_movielist.addView(createTextView(newResultMovie, counter))
-            counter++
+            //counter++
         }
     }
 }
