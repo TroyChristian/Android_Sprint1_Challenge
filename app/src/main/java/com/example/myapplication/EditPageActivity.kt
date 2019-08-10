@@ -23,6 +23,9 @@ class EditPageActivity : AppCompatActivity() {
 
         }
 
+        //EXPLORATORY
+
+
         fun loadMovie(movie:Movie){
             et_movie_title.setText(movie.title)
         }

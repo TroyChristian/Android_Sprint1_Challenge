@@ -20,7 +20,6 @@
             app:layout_constraintBottom_toBottomOf = "parent"
             android:text = "Save Movie"
             android:id="@+id/btn_save_movie"
-            android:background= "#FFF"
             android:layout_height="wrap_content" />
 
     <Button android:layout_width="match_parent"
