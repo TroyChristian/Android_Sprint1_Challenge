@@ -32,7 +32,7 @@ class ListActivity : AppCompatActivity() {
     fun refreshMovieList(){
         ll_movielist.removeAllViews()
         for((counter, movie) in movieList.withIndex()) {
-            createTextView(movie, counter)
+            ll_movielist.addView(createTextView(movie, counter))
         }
     }
     override fun onPostResume(){
